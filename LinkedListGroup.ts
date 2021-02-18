@@ -1,5 +1,13 @@
 import {ISortable} from './ISortable'
 
+class Node {
+    next: Node | null = null;
+    data: number;
+    constructor(data: number) {
+        this.data = data;
+    }
+}
+
 export class LinkedListGroup implements ISortable {
     head: Node | null = null;
   
