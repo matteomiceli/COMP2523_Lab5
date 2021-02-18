@@ -11,7 +11,7 @@ console.log('===============================');
 
 const characterGroup = new CharacterGroup('Xaeyb');
 const sorter2 = new SortUtil(characterGroup);
-sorter1.sort();
+sorter2.sort();
 console.log(characterGroup.data);
 console.log('===============================');
 

@@ -3,11 +3,13 @@ import {ISortable} from './ISortable'
 export class NumberGroup implements ISortable {
     data: number [];
 
-    constructor() {
-        
+    constructor(array) {
+        this.data = array;
     }
 
-    get length(): number {};
+    get length(): number {
+        return this.data.length;
+    };
     swap(leftPos: number, right: number): void {
 
     }
@@ -15,3 +17,4 @@ export class NumberGroup implements ISortable {
 
     }
 }
+

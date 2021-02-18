@@ -3,3 +3,4 @@ export interface ISortable {
     compare(leftPos: number, rightPos: number): boolean
     swap(leftPos: number, rightPos: number): void
 }
+
