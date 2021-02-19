@@ -29,6 +29,7 @@ export class LinkedListGroup implements ISortable {
     // Should return number of Nodes in List
     get length(): number {
       // implement this part yourself
+      
     }
   
    // Convenience method that returns a Node at a given index

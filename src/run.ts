@@ -3,17 +3,17 @@ import {NumberGroup} from './NumberGroup';
 import {CharacterGroup} from './CharacterGroup';
 import {LinkedListGroup} from './LinkedListGroup';
 
-const numberGroup = new NumberGroup([30, 3, -15, 0]);
-const sorter1 = new SortUtil(numberGroup);
-sorter1.sort();
-console.log(numberGroup.data);
-console.log('===============================');
-
-// const characterGroup = new CharacterGroup('Xaeyb');
-// const sorter2 = new SortUtil(characterGroup);
-// sorter2.sort();
-// console.log(characterGroup.data);
+// const numberGroup = new NumberGroup([30, 3, -15, 0]);
+// const sorter1 = new SortUtil(numberGroup);
+// sorter1.sort();
+// console.log(numberGroup.data);
 // console.log('===============================');
+
+const characterGroup = new CharacterGroup('Xaeyb');
+const sorter2 = new SortUtil(characterGroup);
+sorter2.sort();
+console.log(characterGroup.data);
+console.log('===============================');
 
 // const linkedListGroup = new LinkedListGroup();
 // linkedListGroup.add(520);
