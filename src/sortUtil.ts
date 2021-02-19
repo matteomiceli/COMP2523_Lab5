@@ -19,7 +19,7 @@ export class SortUtil {
           throw new Error("This function needs to be implemented");
         }
 
-        // HANDLE LIST OF NUMBERS LOGIC HERE
+        // use swap method and compare
         if (this.collection instanceof Array) {
           if (this.collection[i] > this.collection[i + 1]) {
             let tempLeft = this.collection[i];
@@ -27,12 +27,6 @@ export class SortUtil {
             this.collection[i+1] = tempLeft;
             isSorted = false;
           }
-        }
-
-        // HANDLE STRING LOGIC HERE
-        if (typeof this.collection === "string") {
-          throw new Error("This function needs to be implemented");
-        }
       }
       lastUnsorted--;
     }
