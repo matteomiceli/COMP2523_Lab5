@@ -10,7 +10,7 @@ export class SortUtil {
   sort(): void {
     const { length } = this.collection;
     let isSorted = false;
-    let lastUnsorted = length -1;
+    let lastUnsorted = length - 1;
     while (!isSorted) {
       isSorted = true;
       for (let i = 0; i < lastUnsorted; i++) {
@@ -19,7 +19,6 @@ export class SortUtil {
           this.collection.swap(i, i + 1);
           isSorted = false;
         }
-        // lastUnsorted--;
       }
     }
   }

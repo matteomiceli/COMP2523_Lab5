@@ -1,4 +1,4 @@
-import {ISortable} from './ISortable'
+import { ISortable } from './ISortable'
 
 export class CharacterGroup implements ISortable {
     data: string;
@@ -12,11 +12,11 @@ export class CharacterGroup implements ISortable {
     };
     swap(leftPos: number, rightPos: number): void {
         let array = this.data.split('');
-        
+
         let tmp = array[leftPos];
         array[leftPos] = array[rightPos];
         array[rightPos] = tmp;
-        
+
         let newString = array.join('');
         this.data = newString;
     }

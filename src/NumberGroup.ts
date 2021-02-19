@@ -1,7 +1,7 @@
-import {ISortable} from './ISortable'
+import { ISortable } from './ISortable'
 
 export class NumberGroup implements ISortable {
-    data: number [];
+    data: number[];
 
     constructor(array) {
         this.data = array;
@@ -20,7 +20,7 @@ export class NumberGroup implements ISortable {
     }
 }
 
-let test = new NumberGroup([8,4]);
+let test = new NumberGroup([8, 4]);
 
 test.compare(8, 4);
-test.swap(2,1);
+test.swap(2, 1);
