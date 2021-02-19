@@ -29,7 +29,20 @@ export class LinkedListGroup implements ISortable {
     // Should return number of Nodes in List
     get length(): number {
       // implement this part yourself
-      
+      if (!this.head) {
+        return 0;
+      }
+      let counter = 0;
+      let node: Node | null = this.head;
+      while (node) {
+        // if (counter === index) {
+        //   return node;
+        // }
+        counter++;
+        node = node.next;
+      }
+      return counter;
+      // throw new Error("Error: Index out of bounds");
     }
   
    // Convenience method that returns a Node at a given index
@@ -51,10 +64,13 @@ export class LinkedListGroup implements ISortable {
   
     compare(leftPos: number, rightPos: number): boolean {
       // Implement this part yourself
+      return this.at(leftPos).data > this.at(rightPos).data
     }
   
     swap(leftPos: number, rightPos: number): void {
-      // Implement this part yourself
+      let tmp = this.at(leftPos).data;
+      this.at(leftPos).data = this.at(rightPos).data;
+      this.at(rightPos).data = tmp;
     }
   
     print(): void {
@@ -68,3 +84,8 @@ export class LinkedListGroup implements ISortable {
       }
     }
   }
+
+  // let newNode = new LinkedListGroup();
+  // newNode.add(45);
+  // newNode.add(23);
+  // compare(1,2)
